@@ -1,0 +1,64 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+body, 
+#input-field, 
+#select-field, 
+#generate-btn {
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#input-header {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#input-field {
+    background: none;
+    border: none;
+    height: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+#select-field {
+    height: 30px;
+    width: 200px;
+}
+
+#generate-btn {
+    height: 30px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+#generate-btn:hover {
+    cursor: pointer;
+    background-color: rgb(249, 251, 253);
+}
+
+#color-display {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 20px;
+}
+
+.color-scheme {
+    width: 100px;
+    text-align: center;
+}
+
+.color-scheme div {
+    height: 250px;
+}
+
+.color-scheme:hover {
+    cursor: pointer
+}
